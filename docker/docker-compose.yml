@@ -12,6 +12,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: 'root'
     volumes:
       - ../db:/var/lib/mysql
+      - ../db_import:/db_import
     
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
